@@ -1,0 +1,16 @@
+{
+  "displayName": { "text": "Puerta del Museo Demo", "languageCode": "es" },
+  "internationalPhoneNumber": "+34 910 00 00 00",
+  "nationalPhoneNumber": "910 00 00 00",
+  "websiteUri": "https://museo.example.com/",
+  "location": { "latitude": 40.4168, "longitude": -3.7038 },
+  "addressComponents": [
+    { "longText": "1", "shortText": "1", "types": ["street_number"] },
+    { "longText": "Calle Mayor", "shortText": "C. Mayor", "types": ["route"] },
+    { "longText": "Madrid", "shortText": "Madrid", "types": ["locality", "political"] },
+    { "longText": "Madrid", "shortText": "M", "types": ["administrative_area_level_2", "political"] },
+    { "longText": "Comunidad de Madrid", "shortText": "MD", "types": ["administrative_area_level_1", "political"] },
+    { "longText": "España", "shortText": "ES", "types": ["country", "political"] },
+    { "longText": "28013", "shortText": "28013", "types": ["postal_code"] }
+  ]
+}

@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pester:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        shell: [powershell, pwsh]   # Windows PowerShell 5.1 y PowerShell 7
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pester 5
+        run: Install-Module Pester -MinimumVersion 5.5 -Force -SkipPublisherCheck -Scope CurrentUser
+      - name: Tests
+        run: |
+          Import-Module Pester -MinimumVersion 5.5
+          $r = Invoke-Pester -Path tests -PassThru -Output Detailed
+          if ($r.FailedCount -gt 0) { exit 1 }

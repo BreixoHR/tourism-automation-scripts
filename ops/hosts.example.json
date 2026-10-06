@@ -1,0 +1,4 @@
+[
+  { "name": "web",    "host": "deploy@web.example.com",    "dir": "~/app", "script": "./restart-docker-services.prod.sh" },
+  { "name": "worker", "host": "deploy@worker.example.com", "dir": "~/app", "script": "./restart-docker-services.celery.sh" }
+]

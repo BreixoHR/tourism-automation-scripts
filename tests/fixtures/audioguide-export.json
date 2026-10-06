@@ -1,0 +1,19 @@
+{
+  "responseInformation": {
+    "values": [
+      {
+        "translations": [
+          { "id": 1, "id_text": 100, "id_language": 1, "text": "Museo Demo" },
+          { "id": 2, "id_text": 101, "id_language": 1, "text": "Un museo ficticio para las pruebas." },
+          { "id": 3, "id_text": 102, "id_language": 1, "text": "Entrada" },
+          { "id": 4, "id_text": 103, "id_language": 1, "text": "Entrada principal del museo." },
+          { "id": 5, "id_text": 100, "id_language": 2, "text": "Demo Museum" },
+          { "id": 6, "id_text": 102, "id_language": 2, "text": "Entrance" }
+        ],
+        "monuments_texts": [{ "id": 1, "id_monument": 7, "title": 100, "description": 101 }],
+        "routes_texts": [],
+        "waypoints_texts": [{ "id": 1, "id_waypoint": 3, "title": 102, "description": 103 }]
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+hosts.json
+*.csv
+!tests/fixtures/*.csv
+tts/
+.env
